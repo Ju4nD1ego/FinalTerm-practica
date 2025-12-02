@@ -242,23 +242,22 @@
 # Table Citypops
 *Information about the population number of the cities in different years.*
 
-| Column | Description |
-| :--- | :--- |
-| **city** | The name of the city |
-| **province** | The name of the province |
-| **country** | The code of the country where it belongs to |
-| **population** | Number of inhabitants |
-| **year** | In which year |
+| Column         | Description                                               |
+| -------------- | --------------------------------------------------------- |
+| **city**       | City name (part of composite PK)                          |
+| **country**    | Country code where the city is located                    |
+| **province**   | Province name                                             |
+| **population** | Number of inhabitants in the specified year               |
+| **year**       | Year of the population measurement (part of composite PK) |
 
 # Table CityLocalName
 *Information about the local name of the city.*
-
-| Column | Description |
-| :--- | :--- |
-| **city** | The name of the city |
-| **province** | The name of the province |
-| **country** | The code of the country where it belongs to |
-| **localname** | The local name, usually in a local alphabet (UTF-8) |
+| Column        | Description                                     |
+| ------------- | ----------------------------------------------- |
+| **city**      | City name (part of PK/FK)                       |
+| **country**   | Country code (part of PK/FK)                    |
+| **province**  | Province name (part of PK/FK)                   |
+| **localname** | Local or alternate name used within that region |
 
 # Table Provpops
 *Information about the population number of the provinces in different years.*
