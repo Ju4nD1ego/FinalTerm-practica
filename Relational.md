@@ -2,7 +2,7 @@
 # Table Country
 *Information about the countries, including capital and size.*
 
-| Columna    | Tipo        | Restricciones                     |
+| Column    | Type        | Restriccions                     |
 |------------|-------------|-----------------------------------|
 | Name       | VARCHAR(50) | NOT NULL, UNIQUE                  |
 | Code       | VARCHAR(4)  | PRIMARY KEY                       |
@@ -14,7 +14,7 @@
 # Table City
 *Information about cities, their location and population.*
 
-| Columna    | Tipo        | Restricciones                                 |
+| Column    | Type        | Restriccions                                 |
 |------------|-------------|-----------------------------------------------|
 | Name       | VARCHAR(50) | Parte de PRIMARY KEY                          |
 | Country    | VARCHAR(4)  | Parte de PRIMARY KEY                          |
@@ -27,7 +27,7 @@
 # Table Province
 *Information about administrative divisions (provinces, states, regions).*
 
-| Columna    | Tipo        | Restricciones                   |
+| Column    | Typo        | Restriccions                   |
 |------------|-------------|---------------------------------|
 | Name       | VARCHAR(50) | NOT NULL, PK (Name, Country)    |
 | Country    | VARCHAR(4)  | NOT NULL                        |
