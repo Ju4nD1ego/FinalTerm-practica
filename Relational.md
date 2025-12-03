@@ -16,7 +16,7 @@
 
 | Column     | Type        | Constraints                                                |
 |------------|-------------|------------------------------------------------------------|
-| Name       | VARCHAR(50) | PRIMARY KEY (Name, Country, Province)                     |
+| Name       | VARCHAR(50) | PRIMARY KEY                     |
 | Country    | VARCHAR(4)  | FOREIGN KEY → Country(Code)                               |
 | Province   | VARCHAR(50) | FOREIGN KEY → Province(Name, Country)                     |
 | Population | DECIMAL     | CHECK (Population >= 0)                                   |
